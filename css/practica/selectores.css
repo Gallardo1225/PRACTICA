@@ -1,0 +1,30 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.titulo1{
+    color: blue;
+    background-color: black;
+
+}
+
+h1{
+    color: blueviolet;
+}
+
+p{
+    width: 50px;
+}
+
+div{
+    color: coral;
+
+    
+}
+
+.fondo{
+    background-color: darkslateblue;
+    height: 350px;
+    opacity: 0.5;
+}

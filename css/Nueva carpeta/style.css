@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color:#000 ;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+nav ul{
+    background-color: #757575;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+nav li{
+    display: inline-flex;
+    transition-property: background-color;
+    transition-duration: 0.9s;
+}
+nav a{
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+.contenido{
+    display: inline-flex;
+}
+.secciones{
+    padding: 50px;
+    border-right: #000 solid 4px;
+    display: flex;
+}
+.menu-secundario{
+    padding: 10px;
+}
+img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+nav a:hover{
+    color: aqua;
+}
+nav li:hover{
+    background-color: #000;
+}
+
+@keyframes animacion {
+    0% {
+        border-radius: 10px;
+        border-left: solid 5px blue;
+        border-top: solid 5px aqua;
+        border-right: solid 5px blueviolet;
+        border-bottom: solid 5px chocolate;
+    }
+
+    25% {
+        border-radius: 10px;
+        border-left: solid 5px chocolate;
+        border-top: solid 5px blue;
+        border-right: solid 5px aqua;
+        border-bottom: solid 5px blueviolet;
+    }
+
+    50% {
+        border-radius: 10px;
+        border-left: solid 5px blueviolet;
+        border-top: solid 5px chocolate;
+        border-right: solid 5px blue;
+        border-bottom: solid 5px aqua;
+    }
+
+    75% {
+        border-radius: 10px;
+        border-left: solid 5px aqua;
+        border-top: solid 5px blueviolet;
+        border-right: solid 5px chocolate;
+        border-bottom: solid 5px blue;
+    }
+
+    100% {
+        border-left: solid 5px blue;
+        border-top: solid 5px aqua;
+        border-right: solid 5px blueviolet;
+        border-bottom: solid 5px chocolate;
+    }
+
+}

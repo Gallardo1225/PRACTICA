@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos y formularios en HTML</title>
+</head>
+<body>
+
+    <h1>Explicación de elementos compuestos LaunchX</h1>
+
+    <h2>input / tabla</h2>
+    <table>
+        <tr>
+            <th>mes</th>
+            <th>hora</th>
+            <th>semana</th>
+        </tr>
+
+        <tr>
+            <td> <input type="month" name="mes1" id="mes1"> 
+                <label for="mes1"></label></td>
+            <td> <input type="time" name="tiempo1" id="tiempo1" >
+                <label for="tiempo1"></label></td>
+            <td> <input type="week" name="semena1" id="semena1" >
+                <label for="semena1"></label></td>
+        </tr>
+        
+    </table>
+
+    <hr><br><br>
+
+    <!-- entradas / input  --> 
+
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> Ejemplo de input de texto</label>
+    <br>
+    <!-- Entradas / inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <hr>
+    <!-- tipos de textos-->
+    <h2>input de texto</h2>
+    <label for="correo1">Input de correo</label> <br>
+    <input type="email" id="correo1" name="correo1"> <br><br>
+
+    <label for="numero1">Input de numero</label><br>
+    <input type="number" name="numero1" id="numero1"> <br><br>
+
+    <label for="psw1"> Input de password</label><br>
+    <input type="password" name="psw1" id="psw1"><br><br>
+
+    <label for="tel1"> input de telefono</label><br>
+    <input type="tel" name="tel1" id="tel1" maxlength="8"><br><br>
+
+    <label for="url1"> input de url</label><br>
+    <input type="url" name="url1" id="url1">
+
+    <hr>
+
+    <h2>Input de selección multiple</h2><br>
+
+    <input type="checkbox" name="top1" id="top1" value="chocolate">
+    <label for="top1">cholcolate</label><br>
+    <input type="checkbox" name="top2" id="top2" value="caramelo">
+    <label for="top1">caramelo</label><br>
+    <input type="checkbox" name="top3" id="top3" value="mani">
+    <label for="top1">mani</label><br>
+
+    <h2>Input de selección única</h2><br>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+    <input type="radio" id="chipre" name="americano" value="chipre">
+    <label for="chipre">chipre</label><br><br>
+
+    <h2>input de seleccion </h2><br>
+    <label for="tacos">de que la orden</label>
+    <select name="tacos" id="tacos">
+        <option value="pastor">pastor</option>
+        <option value="vegetariano">vegetariano</option>
+        <option value="res">res</option>
+        <option value="tripa">tripa</option>
+    </select>
+
+
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+   
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+
+    <hr>
+
+    <h2>Input de archivo</h2><br>
+    <input type="file" id="archivo1" name="archivo1"><br>
+
+    <h2>Input de archivo multiple</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple> <br><br>
+
+    <hr>
+
+    <h2>Input de Color</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
+
+    <h2>Input de Rango</h2>
+    <label for="vol">Volumen (entre 0 y 100):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="100"><br>
+    
+    <hr>
+
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    
+    <hr>
+
+     <!-- Formularios -->
+     <h2>Ejemplo de Formulario</h2>
+     <form action="/accion.js" id="form1" method="post">
+         <label for="nombre">Nombre:</label>
+         <input type="text" id="nombre" name="nombre"><br><br>
+         <input type="submit" value="Submit">
+         <input type="reset">
+     </form>
+     
+     <label for="apellido">Apellido:</label>
+     <input type="text" id="apellido" name="apellido" form="form1">
+
+</body>
+</html>

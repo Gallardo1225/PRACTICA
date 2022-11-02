@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACOS GALACTICOS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tacos al Millon</h1>
+    </header>
+
+    <section>
+            <img src="/html/frontend/TACOS AL MILLON.png" alt="Logo tacos al millon">
+
+            <h2>Menú</h2>
+        <h3>Tacos grandes</h3>
+        <p>Con cebolla y cilandro</p>
+        <ul>
+            <li>Res  .............  Q.25</li>
+            <li>pollo  ............  Q.30</li>
+            <li>mixta  .............  Q.40</li>
+            <li>especial  .............  Q.35</li>
+        </ul>
+        
+        <h3>tacos pequeños</h3>
+        <ul>
+            <li>Res  .............  Q.15</li>
+            <li>pollo  ............  Q.15</li>
+            <li>mixta  .............  Q.15</li>
+            <li>especial  .............  Q.15</li>
+        </ul>
+
+        <h3>Especiales</h3>
+
+        <p>Haz tu combo con refresco por Q.20 más</p>
+        <dt>
+            <dd> -tortilla con pollo y atun  .........  Q.20</dd>
+            <dd> -tortilla con chuleta y pollo  .........  Q.20 </dd>  
+            <dd> -tortillas mixtas con bebida  .........  Q.20</dd>
+            <dd> -tortilla de res <br>  con  ingredientes especiales  .........  Q.20 </dd>
+        </dt>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Ubicacion</h2>
+        <h3>sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <TH>Ubicacion</TH>
+                <TH>Horarios</TH>
+            </tr>
+
+            <tr>
+                <td>Centro </td>
+                <td><a href="https://goo.gl/maps/bBax3HommCGMhmAt8" target="_blank">5a calle 3-17 zona 7 san pedro san marcos, San pedro San marcos</a> </td>
+                <td>L-D 24H </td>
+            </tr>
+
+            <tr>
+                <td>Sur </td>
+                <td><a href="https://goo.gl/maps/oWm8HdLxn3tM3WT99" target="_blank">8a calle 8-15 zona 4 san pedro san marcos, San pedro San marcos</a></td>
+                <td>L-S 18H </td>
+            </tr>
+
+            <tr>
+                <td>Norte </td>
+                <td><a href="https://goo.gl/maps/qHXpLvzBYF7M3qcb7" target="_blank">10a calle 5-38 zona 1 san pedro san marcos, San pedro San marcos</a> </td>
+                <td>L-V 24H </td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <section>
+        <br><hr>
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido en nuestras sucursales</h3>
+
+    <form action="">
+        <p>¿De cual taqueria quieres?</p>
+            <select>    
+                <option value="Norte">Norte</option>
+                <option value="Sur">Sur</option>
+                <option value="Centro">Centro</option>
+            </select>
+
+        <p>¿De que tacos quieres?</p>    
+        <input type="checkbox" name="Res" id="Res" value="Res">
+        <label for="Res">Res</label>
+        <input type="number" id="Resnumero" name="Resnumero" placeholder="¿cuantos?"><br>
+
+        <input type="checkbox" name="pollo" id="pollo" value="pollo">
+        <label for="pollo">pollo</label>
+        <input type="number" id="Pollonumero" name="Pollonumero" placeholder="¿cuantos?"><br>
+        
+        <input type="checkbox" name="mixta" id="mixta" value="mixta">
+        <label for="mixta">mixta</label>
+        <input type="number" id="mixtanumero" name="mixtanumero" placeholder="¿cuantos?"><br>
+
+        <br>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Como te llamas?"><br>
+        
+        <br>
+        <label for="telefono">Telefono</label><br>
+        <input type="tel" maxlength="10" id="telefono" name="telefono" placeholder="¿Cual es tu numero Cel?"><br>
+
+        <br>
+        <label for="direccion">Direccion</label><br>
+        <input type="text" id="direccion" name="direccion" placeholder="¿Cual es tu direccion?"><br><br>
+
+        <button type="submit">Enviar pedido </button>
+
+    </form>
+    </section>
+    
+    
+    
+
+</body>
+</html>

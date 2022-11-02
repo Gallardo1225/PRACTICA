@@ -1,0 +1,23 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.colorRojo{
+    color: aqua;
+}
+
+.colorRGB{
+    color: rgb(69, 199, 199);
+}
+
+.colorRGBA{
+    color: hwb(271 17% 11%);
+}
+
+.colorHEX{
+    color: #a52a2a;
+}
+
+.colorHSL{
+    color: hsl(36, 100%, 90%);
+}

@@ -1,0 +1,59 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    height: 400px;
+}
+
+div{
+    height: 400px;
+}
+
+.fondocolor{
+    background-color: aquamarine;
+}
+
+.fondo0pacidad{
+    background-color: blueviolet;
+    opacity: 0.3;
+}
+
+.fondoimagen{
+    background-image: url("./io.jpg");
+}
+
+.fondoimagen{
+    background-image: url("./io.jpg");
+}
+
+.fondorepetidox{
+    background-image: url("./io.jpg");
+    background-repeat: repeat-x;
+}
+
+.fondorepetidoy{
+    background-image: url("./io.jpg");
+    background-repeat: repeat-y;
+}
+
+.fondonorepetido{
+    background-image: url("./io.jpg");
+    background-repeat: no-repeat;
+}
+
+.fondoposicion{
+    background-image: url("./io.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom right;
+
+}
+
+
+.fondocompleto{
+    background-image: url("./io.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
